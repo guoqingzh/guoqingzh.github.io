@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            margin: 10px 0;
+        }
+
+        .sidebar a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            width: 75%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .project img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project .content {
+            padding: 10px;
+        }
+
+        .project h3 {
+            margin: 0 0 10px;
+        }
+
+        .project a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Projects</h1>
-    <p>This df is where I showcase my work.</p>
+    <div class="sidebar">
+        <img src="guoqing_pic.jpg" alt="Your Photo">
+        <h2>Guoqing Zhang</h2>
+        <p>Email: <a href="mailto:your-email@example.com">gqzhang81@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/guoqing-zhang-69468353/" target="_blank">https://www.linkedin.com/in/guoqing-zhang-69468353/</a></p>
+        <p>GitHub: <a href="https://github.com/guoqingzh" target="_blank">github.com/guoqingzh</a></p>
+    </div>
+    <div class="main">
+        <h1>My Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="project1-thumbnail.jpg" alt="Project 1">
+                <div class="content">
+                    <h3>Project 1</h3>
+                    <p><a href="https://github.com/your-username/project1" target="_blank">GitHub Repo</a></p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project2-thumbnail.jpg" alt="Project 2">
+                <div class="content">
+                    <h3>Project 2</h3>
+                    <p><a href="https://github.com/your-username/project2" target="_blank">GitHub Repo</a></p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
 </body>
 </html>
+
